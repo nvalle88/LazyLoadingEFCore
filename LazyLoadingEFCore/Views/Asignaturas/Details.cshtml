@@ -1,0 +1,30 @@
+﻿@model LazyLoadingEFCore.Models.Asignatura
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Asignatura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadHoras)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CantidadHoras)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdAsignatura">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
